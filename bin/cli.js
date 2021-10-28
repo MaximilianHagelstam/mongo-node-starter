@@ -5,8 +5,8 @@ import { execSync } from 'child_process';
 const runCommand = (command) => {
   try {
     execSync(`${command}`, { stdio: 'inherit' });
-  } catch (e) {
-    console.error(`Failed to execute ${command}`);
+  } catch (err) {
+    console.error(`Failed to execute ${command}`, err);
     return false;
   }
   return true;
@@ -24,4 +24,4 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log('You are almost ready! Happy coding! ⚡');
+console.log('You are ready! Happy coding! ⚡');
