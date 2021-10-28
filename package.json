@@ -4,28 +4,29 @@
   "description": "Practice project for Full Stack Open 2021",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "cross-env NODE_ENV=production node src/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaximilianHagelstam/phonebook.git"
   },
-  "keywords": [],
-  "author": "Maximilian Hagelstam",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MaximilianHagelstam/phonebook/issues"
   },
-  "homepage": "https://github.com/MaximilianHagelstam/phonebook#readme",
+  "author": "Maximilian Hagelstam",
+  "license": "MIT",
+  "keywords": [],
   "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.3.0",
