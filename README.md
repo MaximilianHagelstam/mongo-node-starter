@@ -1,11 +1,12 @@
-# Create Express API
+# Express Starter
 
-Setup a modern API by running one command. No configuring loggers, ESlint or Prettier.
+Express boilerplate. No configuring loggers, ESlint or Prettier.
 
 ```sh
-npx @hagemax/create-simple-express-api my-api
-cd my-api
-yarn dev
+git clone --depth 1 https://github.com/MaximilianHagelstam/express-starter my-app
+cd my-app
+yarn install
+yarn start
 ```
 
 ## Pre-reqs
@@ -14,4 +15,4 @@ To build and run this app locally you will need to install [Node.js](https://nod
 
 ## License
 
-Create Express API is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.
+Express Starter is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.

@@ -1,8 +1,7 @@
 {
-  "name": "@hagemax/create-express-api",
+  "name": "express-starter",
   "version": "1.0.0",
-  "description": "Setup a modern API by running one command",
-  "bin": ".bin/cli.js",
+  "description": "Express boilerplate",
   "main": "src/server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/server.js",
@@ -10,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximilianHagelstam/create-express-api.git"
+    "url": "git+https://github.com/MaximilianHagelstam/express-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/MaximilianHagelstam/create-express-api/issues"
+    "url": "https://github.com/MaximilianHagelstam/express-starter/issues"
   },
   "author": "Maximilian Hagelstam",
   "license": "MIT",
   "keywords": [
     "express",
-    "node"
+    "nodejs"
   ],
   "type": "module",
   "dependencies": {
