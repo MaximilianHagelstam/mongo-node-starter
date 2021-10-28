@@ -1,9 +1,9 @@
-# Create Simple Express API
+# Create Express API
 
 Setup a modern API by running one command. No configuring loggers, ESlint or Prettier.
 
 ```sh
-npx create-simple-express-api my-api
+npx @hagemax/create-simple-express-api my-api
 cd my-api
 yarn dev
 ```
@@ -14,4 +14,4 @@ To build and run this app locally you will need to install [Node.js](https://nod
 
 ## License
 
-Create Simple Express API is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.
+Create Express API is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.

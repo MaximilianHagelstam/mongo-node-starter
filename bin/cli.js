@@ -13,15 +13,18 @@ const runCommand = (command) => {
 };
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/MaximilianHagelstam/create-simple-express-api ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/MaximilianHagelstam/create-express-api ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
-if (!checkedOut) process.exit(-1);
-
+if (!checkedOut) {
+  process.exit(-1);
+}
 console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
-if (!installedDeps) process.exit(-1);
+if (!installedDeps) {
+  process.exit(-1);
+}
 
 console.log('You are ready! Happy coding! ⚡');

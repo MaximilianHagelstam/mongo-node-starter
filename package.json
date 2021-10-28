@@ -1,5 +1,5 @@
 {
-  "name": "create-simple-express-api",
+  "name": "@hagemax/create-express-api",
   "version": "1.0.0",
   "description": "Setup a modern API by running one command",
   "bin": ".bin/cli.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximilianHagelstam/create-simple-express-api.git"
+    "url": "git+https://github.com/MaximilianHagelstam/create-express-api.git"
   },
   "bugs": {
-    "url": "https://github.com/MaximilianHagelstam/create-simple-express-api/issues"
+    "url": "https://github.com/MaximilianHagelstam/create-express-api/issues"
   },
   "author": "Maximilian Hagelstam",
   "license": "MIT",
