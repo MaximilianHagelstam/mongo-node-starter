@@ -1,7 +1,8 @@
 {
-  "name": "express-mongo-starter",
+  "name": "express-mongo-api",
   "version": "1.0.0",
-  "description": "Starter template for creating APIs with Express and MongoDB",
+  "description": "Setup a modern API by running one command",
+  "bin": ".bin/cli.js",
   "main": "src/server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/server.js",
@@ -9,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximilianHagelstam/express-mongo-starter.git"
+    "url": "git+https://github.com/MaximilianHagelstam/express-mongo-api.git"
   },
   "bugs": {
-    "url": "https://github.com/MaximilianHagelstam/express-mongo-starter/issues"
+    "url": "https://github.com/MaximilianHagelstam/express-mongo-api/issues"
   },
   "author": "Maximilian Hagelstam",
   "license": "MIT",
