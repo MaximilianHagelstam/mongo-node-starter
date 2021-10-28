@@ -4,6 +4,8 @@ Setup a modern API by running one command. No configuring loggers, ESlint or Pre
 
 ```sh
 npx create-simple-express-api my-api
+cd my-api
+yarn dev
 ```
 
 ## Pre-reqs
