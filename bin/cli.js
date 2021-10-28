@@ -13,7 +13,7 @@ const runCommand = (command) => {
 };
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/MaximilianHagelstam/express-mongo-api ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/MaximilianHagelstam/create-simple-express-api ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
@@ -24,6 +24,4 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log(
-  'You are almost ready! Just setup a MongoDB database, add the connection strings to .env and begin coding ⚡',
-);
+console.log('You are almost ready! Happy coding! ⚡');

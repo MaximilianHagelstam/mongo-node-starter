@@ -1,9 +1,9 @@
-# Express Mongo API
+# Create Simple Express API
 
-Setup a modern API by running one command.
+Setup a modern API by running one command. No configuring loggers, ESlint or Prettier.
 
 ```sh
-npx express-mongo-api my-api
+npx create-simple-express-api my-api
 ```
 
 ## Pre-reqs
@@ -12,4 +12,4 @@ To build and run this app locally you will need to install [Node.js](https://nod
 
 ## License
 
-Express Mongo API is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.
+Create Simple Express API is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.
