@@ -1,7 +1,7 @@
 {
-  "name": "phonebook",
+  "name": "express-mongo-starter",
   "version": "1.0.0",
-  "description": "Practice project for Full Stack Open 2021",
+  "description": "Starter template for creating APIs with Express and MongoDB",
   "main": "src/server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/server.js",
@@ -9,14 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximilianHagelstam/phonebook.git"
+    "url": "git+https://github.com/MaximilianHagelstam/express-mongo-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/MaximilianHagelstam/phonebook/issues"
+    "url": "https://github.com/MaximilianHagelstam/express-mongo-starter/issues"
   },
   "author": "Maximilian Hagelstam",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "express",
+    "mongodb",
+    "node"
+  ],
   "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
