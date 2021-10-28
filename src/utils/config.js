@@ -3,6 +3,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const { PORT } = process.env;
-const { MONGODB_URI } = process.env;
 
-export { MONGODB_URI, PORT };
+const MONGO_URI =
+  process.env.NODE_ENV === 'production'
+    ? process.env.MONGO_URI_PROD
+    : process.env.MONGO_URI_DEV;
+
+export { MONGO_URI, PORT };
