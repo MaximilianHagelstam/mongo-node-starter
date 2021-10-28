@@ -4,6 +4,7 @@
   "rules": {
     "prettier/prettier": "error",
     "import/extensions": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "node/no-unsupported-features/es-syntax": "off"
   }
 }

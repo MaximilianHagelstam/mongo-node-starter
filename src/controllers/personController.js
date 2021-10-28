@@ -1,12 +1,11 @@
 import Person from '../models/Person.js';
 
-const showAll = (req, res) => {
-  Person.find().then((persons) => {
-    res.json(persons);
-  });
+const findAll = async (req, res) => {
+  const persons = await Person.find();
+  res.send(persons);
 };
 
-const add = (req, res) => {
+const add = async (req, res) => {
   const { name, number } = req.body;
 
   if (name === undefined || number === undefined) {
@@ -14,7 +13,50 @@ const add = (req, res) => {
   }
 
   const person = new Person({ name, number });
-  person.save().then((savedPerson) => res.json(savedPerson));
+  await person.save();
+  res.send(person);
 };
 
-export default { showAll, add };
+const findId = async (req, res) => {
+  try {
+    const person = await Person.findById(req.params.id);
+    res.send(person);
+  } catch {
+    res.status(404).json({ error: 'id not found' });
+  }
+};
+
+const deleteId = async (req, res) => {
+  try {
+    await Person.findByIdAndRemove(req.params.id);
+    res.status(204).send();
+  } catch {
+    res.status(404).send({ error: 'id not found' });
+  }
+};
+
+const updateId = async (req, res) => {
+  try {
+    const { name, number } = req.body;
+    const person = await Person.findById(req.params.id);
+
+    if (name === undefined && number === undefined) {
+      return res.status(400).send({ error: 'content missing' });
+    }
+
+    if (name) {
+      person.name = name;
+    }
+
+    if (number) {
+      person.number = number;
+    }
+
+    await person.save();
+    res.json(person);
+  } catch {
+    res.status(404).send({ error: 'id not found' });
+  }
+};
+
+export default { findAll, add, findId, deleteId, updateId };
