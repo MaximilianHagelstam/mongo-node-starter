@@ -1,6 +1,6 @@
-import express from 'express';
-import { body } from 'express-validator';
-import personController from '../controllers/personController.js';
+const express = require('express');
+const { body } = require('express-validator');
+const personController = require('../controllers/personController');
 
 const personRouter = express.Router();
 
@@ -15,4 +15,4 @@ personRouter.get('/:id', personController.findId);
 personRouter.delete('/:id', personController.deleteId);
 personRouter.patch('/:id', personController.updateId);
 
-export default personRouter;
+module.exports = personRouter;
