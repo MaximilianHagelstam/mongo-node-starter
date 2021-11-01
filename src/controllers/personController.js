@@ -1,4 +1,5 @@
 import { validationResult } from 'express-validator';
+
 import Person from '../models/Person.js';
 
 const findAll = async (req, res) => {

@@ -1,5 +1,6 @@
 import express from 'express';
 import { body } from 'express-validator';
+
 import personController from '../controllers/personController.js';
 
 const personRouter = express.Router();
