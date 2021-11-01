@@ -17,6 +17,7 @@ Boilerplate for creating APIs with Node.js and MongoDB
 - MongoDB and Mongoose CRUD
 - Linting and formatting with ESlinst and Prettier
 - Logging with Winston and Morgan
+- Jest and Supertest testing
 
 ## License
 
