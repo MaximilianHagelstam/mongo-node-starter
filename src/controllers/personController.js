@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import { validationResult } from 'express-validator';
 
 import Person from '../models/Person.js';
+=======
+const { validationResult } = require('express-validator');
+const Person = require('../models/Person');
+>>>>>>> facabbc9aee0676c86bffbd01d53d8313fbce71e
 
 const findAll = async (req, res) => {
   const persons = await Person.find();
@@ -63,4 +68,4 @@ const updateId = async (req, res) => {
   }
 };
 
-export default { findAll, add, findId, deleteId, updateId };
+module.exports = { findAll, add, findId, deleteId, updateId };
