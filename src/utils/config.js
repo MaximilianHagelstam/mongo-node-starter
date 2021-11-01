@@ -1,4 +1,4 @@
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -12,4 +12,4 @@ const MONGO_URI =
     ? process.env.MONGO_URI_TEST
     : process.env.MONGO_URI_DEV;
 
-module.exports = { PORT, MONGO_URI };
+export { PORT, MONGO_URI };

@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 import mongoose from 'mongoose';
-
 import { MONGO_URI } from './config.js';
 import logger from './logger.js';
-=======
-const mongoose = require('mongoose');
-const { MONGO_URI } = require('./config');
-const logger = require('./logger');
->>>>>>> facabbc9aee0676c86bffbd01d53d8313fbce71e
 
 const connectDb = async () => {
   try {
@@ -21,4 +14,4 @@ const connectDb = async () => {
   }
 };
 
-module.exports = connectDb;
+export default connectDb;
