@@ -1,3 +1,4 @@
+import { validationResult } from 'express-validator';
 import Person from '../models/Person.js';
 
 const findAll = async (req, res) => {
@@ -6,11 +7,13 @@ const findAll = async (req, res) => {
 };
 
 const add = async (req, res) => {
-  const { name, number } = req.body;
+  const errors = validationResult(req);
 
-  if (name === undefined || number === undefined) {
-    return res.status(400).json({ error: 'content missing' });
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
   }
+
+  const { name, number } = req.body;
 
   const person = new Person({ name, number });
   await person.save();
