@@ -1,17 +1,22 @@
-# Express Starter
+# Mongo Node Starter
 
-Express boilerplate. No configuring loggers, ESlint or Prettier.
+Boilerplate for creating APIs with Node.js and MongoDB
 
-```sh
-git clone --depth 1 https://github.com/MaximilianHagelstam/express-starter my-app
-cd my-app
-yarn install
-yarn start
-```
+## Getting started
 
-## Pre-reqs
+1.  Make sure that you have Node.js and Yarn installed.
+2.  Clone this repo using `git clone --depth=1 https://github.com/MaximilianHagelstam/mongo-node-starter.git <YOUR_PROJECT_NAME>`
+3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
+4.  Make a `.env` it the root of your project as per `.env.example`.
+5.  Run `yarn install` to install dependencies.
+6.  Run `yarn start` to start the example app.
 
-To build and run this app locally you will need to install [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/)
+## Features
+
+- Express.js server config
+- MongoDB and Mongoose CRUD
+- Linting and formatting with ESlinst and Prettier
+- Logging with Winston and Morgan
 
 ## License
 
