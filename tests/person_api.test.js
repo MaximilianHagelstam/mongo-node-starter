@@ -11,13 +11,12 @@ const initialPersons = [
     number: '123',
   },
   {
-    name: 'Charle',
+    name: 'Charles',
     number: '456',
   },
 ];
 
 beforeEach(async () => {
-  await Person.deleteMany({});
   let personObject = new Person(initialPersons[0]);
   await personObject.save();
   personObject = new Person(initialPersons[1]);
@@ -30,6 +29,7 @@ test('all persons are returned', async () => {
   expect(res.body).toHaveLength(initialPersons.length);
 });
 
-afterAll(() => {
+afterAll(async () => {
+  await Person.deleteMany({});
   mongoose.connection.close();
 });
